@@ -65,6 +65,11 @@ video {
   vertical-align: middle;
 }
 
+img {
+  max-width:100%;
+  height:auto;
+}
+
 /*
  * Remove default fieldset styles.
  */
@@ -86,7 +91,66 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+main {
+  background:#fff;
+  width:25vw;
+  margin:0 auto;
+}
 
+article {
+  display: inline-grid;
+  width:90vw;
+  margin:0 auto;
+  grid-template-columns: repeat(auto-fill, 100px);
+  grid-template-columns: 4 1fr;
+  grid-template-rows: minmax(300px,max-content);
+  gap:1rem;
+}
+
+section {
+  background: #ccc;
+  padding:1rem;
+
+}
+
+nav ul{
+  display:flex;
+  background-color:#222;
+  padding:1rem;
+}
+
+nav li {
+  flex:auto;
+  padding:1rem;
+  margin:1rem;
+  background-color:#f5f5f5;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  align-items:flex-start;
+  width:200px;
+  padding:1rem;
+  margin:1rem;
+  backgorund-color:#f5f5f5;
+  border:1px solid #999;
+}
+
+.box>*:first-child {
+  align-self: center;
+}
+
+.box .selected {
+  align-self:center;
+}
+
+.flex-item {
+  padding:1rem;
+  margin:1rem;
+  background-color:yellow;
+  border:1px solid #999;
+}
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -261,3 +325,16 @@ textarea {
   }
 }
 
+.rectangle {
+  height: 600px;
+  width: 400px;
+  background-color: #D9D9D9;
+  position: relative;
+  bottom: 0px;
+  left: 400px;
+
+}
+
+body {
+  background-color: #EEEEEE;
+}
