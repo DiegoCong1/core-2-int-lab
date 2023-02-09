@@ -333,7 +333,8 @@ h1 {
   font-weight: 400;
   font-style: normal;
   position: absolute;
-  left:440px;
+  left:455px;
+  bottom: 400px;
 }
 
 
@@ -343,7 +344,7 @@ h1 {
   background-color: #D9D9D9;
   position: absolute;
   bottom: 100px;
-  left: 150px;
+  left: 165px;
 
 }
 .rectangle1 {
@@ -352,7 +353,7 @@ h1 {
   background-color: #D9D9D9;
   position: absolute;
   bottom: 100px;
-  left: 400px;
+  left: 415px;
 
 }
 .rectangle2 {
@@ -361,7 +362,7 @@ h1 {
   background-color: #D9D9D9;
   position: absolute;
   bottom: 100px;
-  left: 650px;
+  left: 665px;
 
 }
 
@@ -371,7 +372,7 @@ h1 {
   background-color: #D9D9D9;
   position: absolute;
   bottom: 100px;
-  left: 900px;
+  left: 915px;
 
 }
 
@@ -381,7 +382,7 @@ h1 {
   background-color: #D9D9D9;
   position: absolute;
   bottom: 100px;
-  left: 1150px;
+  left: 1165px;
 
 }
 
@@ -390,3 +391,4 @@ h1 {
 body {
   background-color: #EEEEEE;
 }
+

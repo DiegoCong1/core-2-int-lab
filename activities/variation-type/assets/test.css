@@ -1,0 +1,16 @@
+h1 {
+  text-align:center;
+  font-size:100px;
+  font-family: "Jetlab-Variable",sans-serif;
+  font-style: normal;
+  font-variation-settings: 'THRU' 50, 'VERT' 0, 'HORZ' 100, 'LIFT' 100;
+}
+
+h1:hover {
+  text-align:center;
+  font-size:200px;
+    font-family: "Jetlab-Variable",sans-serif;
+  font-style: normal;
+  font-variation-settings: 'THRU' 200, 'VERT' 200, 'HORZ' 0, 'LIFT' 0;
+  transition:0.3s;
+}

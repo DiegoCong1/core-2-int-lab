@@ -1,0 +1,48 @@
+body{
+  background-color:#eeeeee;
+  width:100%;
+  height:100%;
+}
+
+.left-page {
+  background-color:#eeeeee;
+  width: 50%; height: 800px; float:left;
+
+}
+
+.right-page {
+  background-color:#d9d9d9;
+ width: 50%; height: 800px; float:right;
+}
+
+.left-mid {
+  background-color: #e4e4e4;
+  width: 100px;
+  height: 800px;
+  position:absolute;
+  left: 668px;
+}
+
+.right-mid {
+  background-color: #c3c3c3;
+  width: 100px;
+  height: 800px;
+  position:absolute;
+  left: 768px;
+}
+
+.left-stripe {
+  background-color: #e4e4e4;
+  width:10px;
+  height:800px;
+  position: absolute;
+  left: 20px;
+}
+
+.left-stripe2 {
+  background-color: #e4e4e4;
+  width:10px;
+  height:800px;
+  position: absolute;
+  left: 40px;
+}
