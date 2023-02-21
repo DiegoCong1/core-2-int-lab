@@ -20,6 +20,42 @@
 	}
 }
 
+@keyframes letter-4 {
+	0%{
+		opacity:0;
+	}
+	100%{
+		opacity:1;
+	}
+}
+
+@keyframes letter-U {
+	0%{
+		opacity:0;
+	}
+	100%{
+		opacity:1;
+	}
+}
+
+@keyframes letter-3 {
+	0%{
+		opacity:0;
+	}
+	100%{
+		opacity:1;
+	}
+}
+
+@keyframes letter-9 {
+	0%{
+		opacity:0;
+	}
+	100%{
+		opacity:1;
+	}
+}
+
 .block {
 	background: red;
 	border:5px solid red;
@@ -50,6 +86,7 @@
 	position:absolute;
 	bottom:284px;
 	left:340px;
+	animation: letter-4 1s infinite alternate ease-in-out;
 }
 
 .block4 {
@@ -78,6 +115,7 @@
 	position:absolute;
 	bottom:284px;
 	left:680px;
+	animation: letter-3 1s infinite alternate ease-in-out;
 }
 
 .block3 {
@@ -115,6 +153,7 @@
 	position:absolute;
 	bottom:284px;
 	left:1020px;
+	animation: letter-U 1s infinite alternate ease-in-out;
 }
 
 .blocku {
@@ -166,6 +205,7 @@
 	position:absolute;
 	bottom:-300px;
 	left:640px;
+	animation: letter-9 1s infinite alternate ease-in-out;
 }
 
 .block9 {
