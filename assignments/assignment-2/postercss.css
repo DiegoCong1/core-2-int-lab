@@ -1,0 +1,137 @@
+.grid {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(5,1fr);
+    grid-gap: 10px;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+    justify-items: center;
+    position: fixed;
+    rotate: 72deg;
+    left: -210px;
+    top: 945px;
+}
+
+.item {
+    grid-column: 2;
+    grid-row: 2;
+    width: 600px;
+    height: 200px;
+    background-image: linear-gradient(to left, grey, #717171);
+}
+
+.item2 {
+    grid-column: 2;
+    grid-row: 3;
+    width: 600px;
+    height: 200px;
+    color: black;
+    font-size: 80px;
+    font-family: 'bungee';
+    position: relative;
+    text-align: left;
+    rotate: 180deg;
+    top: -250px;
+}
+
+.item3 {
+    grid-column: 3;
+    grid-row: 3;
+    width: 300px;
+    height: 600px;
+    color: #d22727;
+    font-size: 250px;
+    font-family: 'bungee';
+    position: relative;
+    text-align: left;
+    rotate: 269deg;
+    left: -50px;
+    top: 100px;
+}
+
+.item4 {
+    grid-column: 4;
+    grid-row: 3;
+    width: 300px;
+    height: 600px;
+    color: black;
+    font-size: 100px;
+    font-family: 'bungee';
+    position: relative;
+    text-align: left;
+    rotate: 269deg;
+    left: -255px;
+    top: -290px;
+}
+
+body {
+  background-color:#f3ebda;
+}
+
+.item5 {
+    grid-column: 4;
+    grid-row: 1;
+    width: 800px;
+    height: 100px;
+    background-image: linear-gradient(to right, #7b7b7b, #b5b5b5);
+    position: relative;
+    rotate: 270deg;
+    left: -430px;
+    top: -120px;
+}
+
+.item6 {
+    grid-column: 5;
+    grid-row: 2;
+    width: 1300px;
+    height: 100px;
+    background-image: linear-gradient(to left, #7b7b7b, #b5b5b5);
+    position: relative;
+    rotate: 270deg;
+    left: -1365px;
+    top: 553px;
+}
+
+.item7 {
+    grid-column: 5;
+    grid-row: 1;
+    width: 300px;
+    height: 600px;
+    color: black;
+    font-size: 100px;
+    font-family: 'bungee';
+    position: relative;
+    text-align: left;
+    rotate: 270deg;
+    left: -1195px;
+    top: 130px;
+}
+
+
+.item8 {
+    grid-column: 6;
+    grid-row: 3;
+    width: 300px;
+    height: 600px;
+    color: #d22727;
+    font-size: 250px;
+    font-family: 'bungee';
+    position: relative;
+    text-align: left;
+    rotate: 269deg;
+    left: -2170px;
+    top: 20px;
+    letter-spacing: -10px;
+}
+
+.item9 {
+    grid-column: 6;
+    grid-row: 1;
+    width: 600px;
+    height: 300px;
+    position: relative;
+    background-color: grey;
+    left: -1950px;
+    top: 140px;
+}

@@ -1,0 +1,45 @@
+h1 {
+	text-align:center;
+	font-family:'bungee';
+	font-size:50px;
+
+}
+
+a{
+	font-family:'bungee';
+	font-size:20px;	
+}
+
+.a1 {
+	position:absolute;
+	left:400px;
+}
+
+.a2 {
+	position:absolute;
+	left:400px;
+	bottom:500px;
+}
+
+.a3 {
+	position:absolute;
+	left:400px;
+	bottom:455px;
+}
+
+.b1 {
+	position:absolute;
+	left:900px;
+}
+
+.b2 {
+	position:absolute;
+	left:900px;
+	bottom:500px;
+}
+
+.b3 {
+	position:absolute;
+	left:900px;
+	bottom:455px;
+}
