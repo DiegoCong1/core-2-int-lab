@@ -1,0 +1,11 @@
+body{
+  font-family: 'PingFang TC', Arial, sans-serif;
+}
+h1{
+  font-weight: normal;
+}
+
+#container {
+  display:grid;
+  grid-template-columns: repeat(6,1fr);
+}
