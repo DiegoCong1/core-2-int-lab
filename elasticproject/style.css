@@ -1,4 +1,4 @@
-.title {
+.title1 {
 	font-family: "bely-display", sans-serif;
 	font-size:80px;
 	position: absolute;
@@ -12,6 +12,7 @@
   	background-position: 100%;
   	transition: background-position 1s ease;
   	text-decoration: none; 
+    z-index: 1;
 }
 
 .circle {
@@ -96,7 +97,7 @@ h2:hover {
 	cursor:default;
 }
 
-.title:hover {
+.title1:hover {
 	background-position: 0 100%;
 	cursor:default;
 }
@@ -124,9 +125,144 @@ body {
 	height:50px;
 	filter:grayscale(0%);
 	position: fixed;
-    left: 9px;
+  left: 9px;
 }
 
 .static-map:hover {
 	opacity:0;
 }
+
+main {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-flow: column; 
+  grid-gap: 1700px;
+  align-items: center;
+  justify-content: center;
+  height: 300px;
+  position: absolute;
+  left: 3500px;
+  bottom:150px;
+}
+
+.icon {
+  flex: 1 1 auto;
+  margin: 10px;
+  height:30px;
+  width: 60px;
+  font-size: 0px;
+  background-color: #f7f7f7;
+  color: #313131;
+  box-shadow: 5px 5px 1px #bfbfbf;
+}
+
+.icon:hover {
+  height: 80px;
+  width:150px;
+  font-size:10px;
+}
+
+.description {
+  display:none;
+}
+
+.sf1 {
+  position: absolute;
+  left: 3300px;
+  top: 250px;
+  height: 200px;
+  box-shadow: 5px 5px 1px #bfbfbf;
+}
+
+.sf2 {
+  position: absolute;
+  left: 4950px;
+  top: 200px;
+  height: 300px;
+  background-color: #fffff8;
+  border-radius: 50%;
+  box-shadow: 5px 5px 1px #bfbfbf;
+}
+
+.sf3 {
+  position: absolute;
+  left: 6750px;
+  top: 200px;
+  height: 300px;
+  background-color: #fffff8;
+  border-radius: 50%;
+  box-shadow: 5px 5px 1px #bfbfbf;
+}
+
+.sf4 {
+  position: absolute;
+  left: 8500px;
+  top: 200px;
+  height: 300px;
+  background-color: #fffff8;
+  box-shadow: 5px 5px 1px #bfbfbf;
+}
+
+.sf5-1 {
+  position: absolute;
+  left: 10180px;
+  top: 160px;
+  height: 150px;
+  background-color: #fffff8;
+  box-shadow: 5px 5px 1px #bfbfbf;
+}
+
+.sf5-2 {
+  position: absolute;
+  left: 10380px;
+  top: 160px;
+  height: 150px;
+  background-color: #fffff8;
+  box-shadow: 5px 5px 1px #bfbfbf;
+}
+
+.sf5-3 {
+  position: absolute;
+  left: 10380px;
+  top: 350px;
+  height: 150px;
+  background-color: #fffff8;
+  box-shadow: 5px 5px 1px #bfbfbf;
+}
+
+.sf5-4 {
+  position: absolute;
+  left: 10180px;
+  top: 350px;
+  height: 150px;
+  background-color: #fffff8;
+  box-shadow: 5px 5px 1px #bfbfbf;
+}
+
+.sf6 {
+  position: absolute;
+  left: 12050px;
+  top: 200px;
+  height: 300px;
+  background-color: #fffff8;
+  box-shadow: 5px 5px 1px #bfbfbf;
+}
+
+.sf9 {
+  position: absolute;
+  left: 17180px;
+  top: 200px;
+  height: 300px;
+  background-color: #fffff8;
+  box-shadow: 5px 5px 1px #bfbfbf;
+}
+
+.sf11 {
+  position: absolute;
+  left: 20950px;
+  top: 200px;
+  height: 300px;
+  background-color: #fffff8;
+  box-shadow: 5px 5px 1px #bfbfbf;
+}
+
