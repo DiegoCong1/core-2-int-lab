@@ -4,7 +4,7 @@
 	position: absolute;
     top: 260px;
     left: 200px;
-    background: linear-gradient(to right, indianred, indianred 50%, #4b4444 50%);
+    background: linear-gradient(to right, rgba(253,29,29,1), rgba(252,176,69,1) 50%, #4b4444 50%);
   	background-clip: text;
   	-webkit-background-clip: text;
   	-webkit-text-fill-color: transparent;
@@ -30,6 +30,7 @@
   	background-size: 200% 100%;
   	background-position: 100%;
   	transition: background-position 1s ease;
+    display:none;
 }
 
 .line {
@@ -78,7 +79,7 @@
 
 h1 {
 	position:absolute;
-	left:10000px;
+	left:55000px;
 }
 
 h2 {
@@ -109,6 +110,7 @@ h2:hover {
 
 body {
 	background-color: #fffff8;
+  
 }
 
 ::-webkit-scrollbar{
@@ -157,12 +159,17 @@ main {
 }
 
 .icon:hover {
-  height: 80px;
-  width:150px;
+  height: 100px;
+  width:250px;
   font-size:10px;
+  cursor:pointer;
 }
 
 .description {
+  display:none;
+}
+
+.curator-note {
   display:none;
 }
 
@@ -191,7 +198,6 @@ main {
   height: 300px;
   background-color: #fffff8;
   border-radius: 50%;
-  box-shadow: 5px 5px 1px #bfbfbf;
 }
 
 .sf4 {
@@ -248,6 +254,48 @@ main {
   box-shadow: 5px 5px 1px #bfbfbf;
 }
 
+.tc5 {
+  position: absolute;
+  left: 13600px;
+  top: 250px;
+  height: 200px;
+  background-color: #fffff8;
+}
+
+.gs1 {
+  position: absolute;
+  left: 15350px;
+  top: 250px;
+  height: 200px;
+  background-color: #fffff8;
+}
+
+.gs2 {
+  position: absolute;
+  left: 15550px;
+  top: 250px;
+  height: 200px;
+  background-color: #fffff8;
+}
+
+.gs3 {
+  position: absolute;
+  left: 15750px;
+  top: 250px;
+  height: 200px;
+  background-color: #fffff8;
+}
+
+.sf7 {
+  position: absolute;
+  left: 19180px;
+  top: 200px;
+  height: 300px;
+  background-color: #fffff8;
+  border-radius:50%;
+  box-shadow: 5px 5px 1px #bfbfbf;
+}
+
 .sf9 {
   position: absolute;
   left: 17180px;
@@ -266,3 +314,439 @@ main {
   box-shadow: 5px 5px 1px #bfbfbf;
 }
 
+.sf12 {
+  position: absolute;
+  left: 22750px;
+  top: 180px;
+  height: 300px;
+  background-color: #fffff8;
+  box-shadow: 5px 5px 1px #bfbfbf;
+}
+
+.tc1 {
+  position: absolute;
+  left: 24150px;
+  top: 210px;
+  height: 200px;
+  background-color: #fffff8;
+}
+
+.tc2 {
+  position: absolute;
+  left: 24360px;
+  top: 210px;
+  height: 200px;
+  background-color: #fffff8;
+}
+
+.tc3 {
+  position: absolute;
+  left: 24570px;
+  top: 210px;
+  height: 200px;
+  background-color: #fffff8;
+}
+
+.dh1 {
+  position: absolute;
+  left: 26270px;
+  top: 180px;
+  height: 300px;
+  background-color: #fffff8;
+  box-shadow: 5px 5px 1px #bfbfbf;
+}
+
+.fog1 {
+  position: absolute;
+  left: 28070px;
+  top: 180px;
+  height: 300px;
+  background-color: #fffff8;
+}
+
+.sf19 {
+  position: absolute;
+  left: 29550px;
+  top: 180px;
+  height: 300px;
+  background-color: #fffff8;
+  box-shadow: 5px 5px 1px #bfbfbf;
+}
+
+.sf17 {
+  position: absolute;
+  left: 31600px;
+  top: 180px;
+  height: 300px;
+  background-color: #fffff8;
+  box-shadow: 5px 5px 1px #bfbfbf;
+}
+
+.sf14 {
+  position: absolute;
+  left: 33200px;
+  top: 180px;
+  height: 300px;
+  background-color: #fffff8;
+  box-shadow: 5px 5px 1px #bfbfbf;
+}
+
+.sf18 {
+  position: absolute;
+  left: 35200px;
+  top: 180px;
+  height: 300px;
+  background-color: #fffff8;
+  box-shadow: 5px 5px 1px #bfbfbf;
+}
+
+.sf20 {
+  position: absolute;
+  left: 37000px;
+  top: 180px;
+  height: 300px;
+  background-color: #fffff8;
+  box-shadow: 5px 5px 1px #bfbfbf;
+}
+
+.sf15 {
+  position: absolute;
+  left: 38800px;
+  top: 180px;
+  height: 300px;
+  background-color: #fffff8;
+  box-shadow: 5px 5px 1px #bfbfbf;
+}
+
+.sf16 {
+  position: absolute;
+  left: 40500px;
+  top: 180px;
+  height: 300px;
+  background-color: #fffff8;
+  box-shadow: 5px 5px 1px #bfbfbf;
+}
+
+.sf21 {
+  position: absolute;
+  left: 42300px;
+  top: 180px;
+  height: 300px;
+  background-color: #fffff8;
+  box-shadow: 5px 5px 1px #bfbfbf;
+}
+
+.sf22 {
+  position: absolute;
+  left: 44100px;
+  top: 180px;
+  height: 300px;
+  background-color: #fffff8;
+  box-shadow: 5px 5px 1px #bfbfbf;
+}
+
+.sf23 {
+  position: absolute;
+  left: 45800px;
+  top: 180px;
+  height: 300px;
+  background-color: #fffff8;
+  box-shadow: 5px 5px 1px #bfbfbf;
+}
+
+.sf24 {
+  position: absolute;
+  left: 47600px;
+  top: 180px;
+  height: 300px;
+  background-color: #fffff8;
+  box-shadow: 5px 5px 1px #bfbfbf;
+}
+
+.sf25 {
+  position: absolute;
+  left: 49400px;
+  top: 180px;
+  height: 300px;
+  background-color: #fffff8;
+  box-shadow: 5px 5px 1px #bfbfbf;
+}
+
+.label {
+  font-weight:bold;
+}
+
+.artist {
+  font-style:italic;
+}
+
+.description {
+  position:relative;
+  top:-270px;
+  width:800px;
+}
+
+.door {
+  height: 784px;
+  width: 200px;
+  background-color: #4b4444;
+  position: absolute;
+  top: -130px;
+  left: 2200px;
+}
+
+.floor {
+  height: 110px;
+  width: 50000px;
+  background: linear-gradient(90deg, rgba(255,255,248,1) 0%, rgba(242,242,231,1) 1%, rgba(242,242,231,1) 100%);
+  position: absolute;
+  left: 1800px;
+  bottom: 0px;
+}
+
+.shadow {
+  background-color: #9c9c9c;
+  width: 200px;
+  height: 140px;
+  position: absolute;
+  left: 2219px;
+  top: 654px;
+  transform: skew(15deg);
+}
+
+.lamp2 {
+  height:70px;
+  position:absolute;
+  left:3100px;
+  top:110px;
+}
+
+.lamp3 {
+  height:70px;
+  position:absolute;
+  left:4800px;
+  top:110px;
+}
+
+.lamp4 {
+  height:70px;
+  position:absolute;
+  left:8300px;
+  top:110px;
+}
+
+.lamp5 {
+  height:70px;
+  position:absolute;
+  left:10000px;
+  top:110px;
+}
+
+.lamp6 {
+  height:70px;
+  position:absolute;
+  left:11900px;
+  top:110px;
+}
+
+.lamp7 {
+  height:70px;
+  position:absolute;
+  left:17000px;
+  top:110px;
+}
+
+.lamp8 {
+  height:70px;
+  position:absolute;
+  left:19000px;
+  top:110px;
+}
+
+.lamp8 {
+  height:70px;
+  position:absolute;
+  left:20800px;
+  top:110px;
+}
+
+.lamp9 {
+  height:70px;
+  position:absolute;
+  left:22600px;
+  top:110px;
+}
+
+.lamp10 {
+  height:70px;
+  position:absolute;
+  left:26100px;
+  top:110px;
+}
+
+.lamp11 {
+  height:70px;
+  position:absolute;
+  left:29400px;
+  top:110px;
+}
+
+.lamp12 {
+  height:70px;
+  position:absolute;
+  left:31400px;
+  top:110px;
+}
+
+.lamp13 {
+  height:70px;
+  position:absolute;
+  left:33000px;
+  top:110px;
+}
+
+.lamp14 {
+  height:70px;
+  position:absolute;
+  left:35000px;
+  top:110px;
+}
+
+.lamp15 {
+  height:70px;
+  position:absolute;
+  left:38600px;
+  top:110px;
+}
+
+.lamp16 {
+  height:70px;
+  position:absolute;
+  left:40300px;
+  top:110px;
+}
+
+.lamp17 {
+  height:70px;
+  position:absolute;
+  left:42100px;
+  top:110px;
+}
+
+.lamp18 {
+  height:70px;
+  position:absolute;
+  left:43900px;
+  top:110px;
+}
+
+.lamp19 {
+  height:70px;
+  position:absolute;
+  left:45600px;
+  top:110px;
+}
+
+.lamp20 {
+  height:70px;
+  position:absolute;
+  left:47400px;
+  top:110px;
+}
+
+.lamp21 {
+  height:70px;
+  position:absolute;
+  left:49200px;
+  top:110px;
+}
+
+.lamp22 {
+  height:70px;
+  position:absolute;
+  left:19000px;
+  top:110px;
+}
+
+.lamp23 {
+  height:70px;
+  position:absolute;
+  left:36800px;
+  top:110px;
+}
+
+
+.lamp1-1 {
+  height: 150px;
+  position: absolute;
+  left: 6820px;
+  top: 50px;
+}
+
+.lamp1-2 {
+  height: 150px;
+  position: absolute;
+  left: 13797px;
+  top: 50px;
+}
+
+.lamp1-3 {
+  height: 150px;
+  position: absolute;
+  left: 15585px;
+  top: 50px;
+}
+
+.lamp1-4 {
+  height: 150px;
+  position: absolute;
+  left: 24390px;
+  top: 50px;
+}
+
+.lamp1-5 {
+  height: 150px;
+  position: absolute;
+  left: 28156px;
+  top: 50px;
+}
+
+.intro {
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  background-color: #e5e5e5;
+  Left: 2000px;
+  top: 250px;
+  text-align: center;
+  font-size: 10px;
+  padding-top: 50px;
+  font-weight:bold;
+  box-shadow: 5px 5px 1px #bfbfbf;
+}
+
+.introtext {
+  width: 500px;
+  display: none;
+  position: relative;
+  right: 500px;
+  top: -15px;
+}
+
+.intro:hover .introtext {
+  display:block;
+}
+
+.arrow {
+  font-size: 80px;
+  position: absolute;
+  left: 1060px;
+  top: 249px;
+}
+
+.menu {
+  font-size:8px;
+  font-weight:bold;
+  position:fixed;
+  cursor: pointer;
+}
