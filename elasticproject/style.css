@@ -751,7 +751,7 @@ main {
   cursor: pointer;
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 800px) {
   .title1{
     font-size:60px;
     top:180px;
@@ -780,5 +780,6 @@ main {
     top:-90px;
     left:230px;
   }
+
 
 }
