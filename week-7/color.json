@@ -2,14 +2,17 @@
     {
       "name" : "Blue (munsell)",
       "value" : "#0091AD"
+
     },
     {
       "name" : "Elctric Blue",
       "value" : "#6EFAFB"
+
     },
     {
       "name" : "Old Lace",
       "value" : "#FFF4E4"
+
     },
     {
       "name" : "Vanilla",
@@ -18,5 +21,6 @@
     {
       "name" : "Rose Pink",
       "value" : "#FF57BB"
+
     }
 ]

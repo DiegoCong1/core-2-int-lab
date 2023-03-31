@@ -1,3 +1,6 @@
+
+
+
 let container = document.getElementById("content");
 
 fetch('color.json')
@@ -14,12 +17,11 @@ fetch('color.json')
     console.log(item, index);
     console.log(item['name']);
     let newItem = document.createElement("div");
-    newItem.classList.add('icon', 'icon1', 'icon2', 'icon3', 'icon4', 'icon5');
+    newItem.classList.add('icon');
     newItem.innerHTML = `
       <div class="names"><span class="label">Name</span> ${item.name}</div>
-      <div class="values"><span class="label">Value</span> ${item.value}</div>
-    container.appendChild(newItem)`; 
-    container.appendChild(newItem);    
-
+      <div class="values"><span class="label">Value</span> ${item.value}</div>`;
+      newItem.style.backgroundColor = item.value;
+    container.appendChild(newItem); 
   });
 }

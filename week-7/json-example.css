@@ -81,5 +81,8 @@ main {
 
 .icon {
 	background-color: #0091AD;
+}
 
+test {
+	padding:1em;
 }
