@@ -1,0 +1,14 @@
+img {
+ max-width: 100%;
+}
+
+h1 {
+    text-align:center;
+    font-size:50px;
+    font-family:"cc-deadline-variable", sans-serif;
+    font-variation-settings: "slnt" 0, "wdth" 50;;
+}
+
+button {
+    aligne-items:center;
+}

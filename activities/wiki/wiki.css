@@ -1,0 +1,19 @@
+p {
+	line-height:1.5em;
+	margin:20px;
+	padding:50px;
+	padding-right: 400px;
+	font-family: "times new roman";
+}
+
+body {
+	align-items:center;
+
+background-color: ivory;
+}
+
+h1 {
+	font-size:30px;
+	padding-left: 100px;
+	font-weight: bolder;
+}

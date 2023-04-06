@@ -1,6 +1,3 @@
-
-
-
 let container = document.getElementById("content");
 
 fetch('color.json')
