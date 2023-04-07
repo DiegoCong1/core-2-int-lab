@@ -1,0 +1,22 @@
+{
+  "brand": {
+    "color": {
+      "$type": "color",
+      "acid green": {
+        "$value": "#00ff66"
+      },
+      "hot pink": {
+        "$value": "#dd22cc"
+      }
+    },
+    "typeface": {
+      "$type": "fontFamily",
+      "primary": {
+        "$value": "Comic Sans MS"
+      },
+      "secondary": {
+        "$value": "Times New Roman"
+      }
+    }
+  }
+}
