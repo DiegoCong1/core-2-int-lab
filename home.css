@@ -134,6 +134,17 @@ section {
 	color:black;
 }
 
+.readings10 {
+	grid-column: 1;
+ 	grid-row: 12;
+	font-size:20px;
+	font-family: "tondu", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	text-decoration:none;
+	color:black;
+}
+
 
 .lectures {
 	grid-column: 2;
@@ -252,4 +263,87 @@ section {
 	font-style: normal;
 	color:black;
 	cursor:default;
+}
+
+.space4{
+	grid-column: 4;
+ 	grid-row: 2;
+}
+
+
+.letter-grid {
+	grid-column: 4;
+ 	grid-row: 3;
+	font-size:20px;
+	font-family: "tondu", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	text-decoration:none;
+	color:black;
+}
+
+.Variation-type {
+	grid-column: 4;
+ 	grid-row: 4;
+	font-size:20px;
+	font-family: "tondu", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	text-decoration:none;
+	color:black;
+}
+
+.Webtype-intro {
+	grid-column: 4;
+ 	grid-row: 5;
+	font-size:20px;
+	font-family: "tondu", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	text-decoration:none;
+	color:black;
+}
+
+.wiki {
+	grid-column: 4;
+ 	grid-row: 6;
+	font-size:20px;
+	font-family: "tondu", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	text-decoration:none;
+	color:black;
+}
+
+.apis {
+	grid-column: 4;
+ 	grid-row: 7;
+	font-size:20px;
+	font-family: "tondu", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	text-decoration:none;
+	color:black;
+}
+
+.cssgrid {
+	grid-column: 4;
+ 	grid-row: 8;
+	font-size:20px;
+	font-family: "tondu", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	text-decoration:none;
+	color:black;
+}
+
+.poster {
+	grid-column: 4;
+ 	grid-row: 9;
+	font-size:20px;
+	font-family: "tondu", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	text-decoration:none;
+	color:black;
 }
