@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Squirrel Census</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="assets/reset.css" rel="stylesheet">
+		<link href="assets/style.css" rel="stylesheet">
+		<script defer src="assets/data.js"></script>
+	</head>
+	<body>
+		<h1>Squirrel Census</h1>
+		<form>
+			<label for="shift">Select shift</label>
+			<select id="shift" name="shift">
+				<option>All day</option>
+				<option>Morning</option>
+				<option>Afternoon</option>
+			</select>
+		</form>
+		<ul id="graph">
+			<li class="gray"></li>
+			<li class="cinnamon"></li>
+			<li class="black"></li>
+			<li class="undefined"></li>
+		</ul>
+	</body>
+</html>

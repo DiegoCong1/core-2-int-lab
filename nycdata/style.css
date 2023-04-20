@@ -1,0 +1,37 @@
+@font-face {
+    font-family: 'WhirlyBirdie-WideBold';
+    src: url('assets/WhirlyBirdie-WideBold.otf');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+h1 {
+	font-family:"WhirlyBirdie-WideBold";
+	font-size:200px;
+	text-align:center;
+	box-sizing: border-box;
+    padding: 100px;
+    color:black;
+}
+
+h2{
+	font-family:"Agency Fb";
+	font-size:50px;
+	font-weight:100;
+ 	position:fixed;
+ 	top:0px;
+ 	left:1340px;
+}
+
+#average-speed.red {
+  color: red;
+}
+
+#average-speed.orange {
+  color: orange;
+}
+
+#average-speed.green {
+  color: green;
+}

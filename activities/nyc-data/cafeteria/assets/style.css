@@ -1,0 +1,33 @@
+body {
+    --spacing: 24px;
+
+    font-family: sans-serif;
+    padding: var( --spacing);
+
+}
+
+@media (min-width: 600px) {
+    body { 
+        --spacing: 32px;
+    }
+}
+
+h1{
+    font-weight: bold;
+}
+#records{
+    margin-top: var(--spacing);
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: var(--spacing);
+}
+.record{
+    font-size: calc(18px * var(--ratio) + 8px);
+}
+
+#options li{
+    display: inline-block;
+    margin-right: var(--spacing);
+}
+
+
