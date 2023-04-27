@@ -15,6 +15,10 @@ h1 {
     color:black;
 }
 
+.mph {
+	font-size:30px;
+}
+
 h2{
 	font-family:"Agency Fb";
 	font-size:50px;
@@ -34,4 +38,77 @@ h2{
 
 #average-speed.green {
   color: green;
+}
+
+
+
+.manhattan {
+    position: fixed;
+    left: 140px;
+    top: 60px;
+    height: 120px;
+    rotate: 36deg;
+}
+
+.manhattan:hover {
+	height:130px;
+}
+
+.bronx {
+position: fixed;
+    left: 175px;
+    top: 48px;
+    height: 60px;
+    rotate: 6deg;
+}
+
+.bronx:hover {
+	height:70px;
+}
+
+.queen {
+position: fixed;
+    left: 154px;
+    top: 107px;
+    height: 140px;
+    rotate: 2deg;
+}
+
+.queen:hover {
+	height:150px;
+}
+
+.brooklyn {
+    position: fixed;
+    left: 124px;
+    top: 141px;
+    height: 90px;
+    rotate: 1deg;
+}
+
+.brooklyn:hover {
+	height:100px;
+}
+
+.staten {
+position: fixed;
+    left: 60px;
+    top: 200px;
+    height: 60px;
+    rotate: 1deg;
+}
+
+.staten:hover {
+	height:70px;
+}
+
+.traffic {
+	width:40px;
+	height:40px;
+	border-radius:50%;
+	background:green;
+	position:fixed;
+	bottom:60px;
+	right:60px;
+	border:solid black;
 }
