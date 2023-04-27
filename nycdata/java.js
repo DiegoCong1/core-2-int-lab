@@ -4,7 +4,7 @@ const fetchData = () => {
   const yesterday = new Date(now - ONE_DAY);
   const yesterdayISO = yesterday.toISOString();
 
-  fetch(`https://data.cityofnewyork.us/resource/i4gi-tjb9.json?$where=data_as_of > '${yesterdayISO}'&$limit=1000&$$app_token=j6eaPhMTnZbwwIHX2KajVYxVo`)
+  fetch(`https://data.cityofnewyork.us/resource/i4gi-tjb9.json?data_as_of=2023-04-27T07:49:04.000&$limit=1000&$$app_token=j6eaPhMTnZbwwIHX2KajVYxVo`)
     .then(response => response.json())
     .then(data => {
       console.log(data);
