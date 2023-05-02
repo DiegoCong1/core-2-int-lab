@@ -10,15 +10,29 @@
 <body>
 	<h1><span id="average-speed"></span><div class="mph">mph</div></h1>
 	<h2>SEASONS</h2>
+	<h3>NYC real time traffic speed<br>Update every 15 mins</h3>
 	<img class="manhattan" src="assets/manhattan.png">
 	<img class="queen" src="assets/queen.png">
 	<img class="bronx" src="assets/bronx.png">
 	<img class="staten" src="assets/staten.png">
 	<img class="brooklyn" src="assets/brooklyn.png">
 
-	<img class="brooklyn" src="assets/refresh.png">
+	<img class="refresh" id="refresh" src="assets/refresh.png">
 
-	<div class="traffic"></div>
+	<div class="traffic">
+		<div class="legend">
+			<div class="gt">
+				<div class="lt">----------------- Light Traffic</div>
+			</div>
+			<div class="yt">
+				<div class="mt">-------------- Medium Traffic</div>
+			</div>
+			<div class="rt">
+				<div class="ht">---------------- Heavy Traffic</div>
+			</div>
+
+		</div>
+	</div>
 	
 </body>
 

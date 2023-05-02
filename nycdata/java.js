@@ -1,10 +1,26 @@
 const fetchData = () => {
-  const ONE_DAY = 24 * 60 * 60 * 1000; // milliseconds in a day
-  const now = new Date();
-  const yesterday = new Date(now - ONE_DAY);
-  const yesterdayISO = yesterday.toISOString();
+	const ONE_DAY = 24 * 60 * 60 * 1000; // milliseconds in a day
+	const now = new Date();
+	const yesterday = new Date(now - ONE_DAY);
+  	const yesterdayISO = toIsoString(yesterday);
 
-  fetch(`https://data.cityofnewyork.us/resource/i4gi-tjb9.json?data_as_of=2023-04-27T07:49:04.000&$limit=1000&$$app_token=j6eaPhMTnZbwwIHX2KajVYxVo`)
+  function toIsoString(date) {
+  var tzo = -date.getTimezoneOffset(),
+      dif = tzo >= 0 ? '+' : '-',
+      pad = function(num) {
+          return (num < 10 ? '0' : '') + num;
+      };
+
+  return date.getFullYear() +
+      '-' + pad(date.getMonth() + 1) +
+      '-' + pad(date.getDate()) +
+      'T' + pad(date.getHours()) +
+      ':' + pad(date.getMinutes()) +
+      ':' + pad(date.getSeconds())
+
+    } 
+
+  fetch(`https://data.cityofnewyork.us/resource/i4gi-tjb9.json?$where=data_as_of>'${yesterdayISO}'&$limit=5000&$$app_token=j6eaPhMTnZbwwIHX2KajVYxVo`)
     .then(response => response.json())
     .then(data => {
       console.log(data);
@@ -29,16 +45,19 @@ const fetchData = () => {
           averageSpeedElement.classList.remove('orange');
           averageSpeedElement.classList.remove('green');
           console.log(`Color: red`);
+          document.querySelector('h1').style.fontStyle = 'normal';
         } else if (averageSpeed < 20) {
           averageSpeedElement.classList.add('orange');
           averageSpeedElement.classList.remove('red');
           averageSpeedElement.classList.remove('green');
           console.log(`Color: orange`);
-        } else {
+          document.querySelector('h1').style.fontStyle = 'normal';
+        } else if (averageSpeed > 20) {
           averageSpeedElement.classList.add('green');
           averageSpeedElement.classList.remove('red');
           averageSpeedElement.classList.remove('orange');
           console.log(`Color: green`);
+          document.querySelector('h1').style.fontStyle = 'italic';
         }
       };
 
@@ -82,3 +101,7 @@ const fetchData = () => {
 };
 
 fetchData();
+
+  document.getElementById("refresh").addEventListener("click", function() {
+    location.reload();
+  });

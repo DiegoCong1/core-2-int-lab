@@ -145,6 +145,39 @@ section {
 	color:black;
 }
 
+.readings11 {
+	grid-column: 1;
+ 	grid-row: 13;
+	font-size:20px;
+	font-family: "tondu", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	text-decoration:none;
+	color:black;
+}
+
+.readings12 {
+	grid-column: 1;
+ 	grid-row: 14;
+	font-size:20px;
+	font-family: "tondu", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	text-decoration:none;
+	color:black;
+}
+
+.readings13 {
+	grid-column: 1;
+ 	grid-row: 15;
+	font-size:20px;
+	font-family: "tondu", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	text-decoration:none;
+	color:black;
+}
+
 
 .lectures {
 	grid-column: 2;
@@ -340,6 +373,17 @@ section {
 .poster {
 	grid-column: 4;
  	grid-row: 9;
+	font-size:20px;
+	font-family: "tondu", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	text-decoration:none;
+	color:black;
+}
+
+.documents {
+	grid-column: 4;
+ 	grid-row: 10;
 	font-size:20px;
 	font-family: "tondu", sans-serif;
 	font-weight: 400;
