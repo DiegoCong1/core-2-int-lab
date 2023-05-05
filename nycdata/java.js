@@ -3,6 +3,7 @@ const fetchData = () => {
 	const now = new Date();
 	const yesterday = new Date(now - ONE_DAY);
   	const yesterdayISO = toIsoString(yesterday);
+  	console.log(yesterdayISO);
 
   function toIsoString(date) {
   var tzo = -date.getTimezoneOffset(),
@@ -24,6 +25,7 @@ const fetchData = () => {
     .then(response => response.json())
     .then(data => {
       console.log(data);
+
       const oneHourAgo = new Date(Date.now() - 60 * 60 * 1000);
       let lastHourData = data.filter(item => {
         const dataAsOf = new Date(item.data_as_of);
@@ -32,12 +34,14 @@ const fetchData = () => {
         return parseFloat(item.speed) && dataAsOfTime >= oneHourAgoTime;
 
       });
+      console.log('lasthour', lastHourData);
 
       const averageSpeedElement = document.getElementById('average-speed');
 
       const updateAverageSpeed = (data) => {
         const totalSpeed = data.reduce((acc, item) => acc + parseFloat(item.speed), 0);
         const averageSpeed = totalSpeed / data.length;
+        console.log(data, totalSpeed, averageSpeed);
         averageSpeedElement.textContent = averageSpeed.toFixed(2);
 
         if (averageSpeed < 10) {
@@ -61,7 +65,7 @@ const fetchData = () => {
         }
       };
 
-      updateAverageSpeed(lastHourData);
+      updateAverageSpeed(data);
 
 
       const manhattanImg = document.querySelector('.manhattan');
@@ -104,4 +108,53 @@ fetchData();
 
   document.getElementById("refresh").addEventListener("click", function() {
     location.reload();
+
+     });
+
+$(document).ready(function() {
+  $('.manhattan').click(function() {
+    if ($(this).css('filter') == 'none') {
+      $(this).css('filter', 'invert(94%) sepia(0%) saturate(3520%) hue-rotate(30deg) brightness(70%) contrast(61%)');
+    } else {
+      $(this).css('filter', 'none');
+    }
   });
+});
+
+
+const pastButton = document.querySelector('.y2000');
+pastButton.addEventListener('click', () => {
+  const today2000 = new Date('2000-05-04');
+  const today2000ISO = toIsoString(today2000);
+
+  function toIsoString(date) {
+  var tzo = -date.getTimezoneOffset(),
+      dif = tzo >= 0 ? '+' : '-',
+      pad = function(num) {
+          return (num < 10 ? '0' : '') + num;
+      };
+
+  return date.getFullYear() +
+      '-' + pad(date.getMonth() + 1) +
+      '-' + pad(date.getDate()) +
+      'T' + pad(date.getHours()) +
+      ':' + pad(date.getMinutes()) +
+      ':' + pad(date.getSeconds())
+
+    } 
+
+  const url = `https://data.cityofnewyork.us/resource/i4gi-tjb9.json?$where=data_as_of>'${today2000ISO}'&$limit=5000&$$app_token=j6eaPhMTnZbwwIHX2KajVYxVo`;
+  
+  fetchData(url)
+    .then(data => {
+      const todayData = data.filter(item => {
+        const dataAsOf = new Date(item.data_as_of);
+        return dataAsOf.toDateString() === today2000.toDateString();
+      });
+      console.log('today', todayData);
+
+      updateAverageSpeed(todayData);
+    });
+});
+
+

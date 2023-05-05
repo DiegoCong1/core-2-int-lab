@@ -15,20 +15,71 @@ h1 {
     left: 50%;
     top: 30%;
     transform: translate(-50%, -50%);
+    pointer-events:none;
+    -webkit-text-stroke: 2px black;
+
 }
 
 .mph {
-	font-size:30px;
+	font-size:20px;
 	font-style:normal;
+	font-family:"Agency Fb";
+	font-weight:100;
+  -webkit-text-stroke: 0px black;
+
+}
+
+.web{
+	width:45px;
+	height:45px;
+	border-radius:50%;
+	background:white;
+	position:fixed;
+	bottom:130px;
+	left:60px;
+	border:solid black;
+	text-align:center;
+	font-size:30px;
+	font-family:"WhirlyBirdie-WideBold";
+	line-height:45px;
+	cursor:default;
+}
+
+.web:hover .webinfo{
+	display:block;
+}
+
+.webinfo {
+    width: 300px;
+    height: 100px;
+    border: 3px solid;
+    border-radius: 10px;
+    position: fixed;
+    left: 170px;
+    bottom: 100px;
+    font-family: Agency Fb;
+    font-size: 10px;
+    text-align: left;
+    font-size: 18px;
+    line-height: 30px;
+    padding-left: 20px;
+    padding-top: 10px;
+    display:none;
+}
+
+.y2000{
+	text-align:center;
+	cursor:pointer;
 }
 
 h2{
-	font-family:"Agency Fb";
-	font-size:50px;
-	font-weight:100;
- 	position:fixed;
- 	top:0px;
- 	left:1340px;
+    font-family: "Agency Fb";
+    font-size: 20px;
+    font-weight: 100;
+    position: fixed;
+    top: 0px;
+    right: 10px;
+    width: 100px;
 }
 
 h3{
@@ -62,49 +113,60 @@ h3{
     height: 280px;
     rotate: 31deg;
     z-index:-1;
+    filter: invert(94%) sepia(0%) saturate(3520%) hue-rotate(30deg) brightness(160%) contrast(61%);
+    cursor:pointer;
 }
 
 .manhattan:hover {
-	height:130px;
+	filter: invert(94%) sepia(0%) saturate(3520%) hue-rotate(30deg) brightness(70%) contrast(61%);
 }
+
+
+
 
 .bronx {
     position: fixed;
-    left: 781px;
+    left: 786px;
     top: 100px;
     height: 150px;
     rotate: 3deg;
     z-index:-1;
+    filter: invert(94%) sepia(0%) saturate(3520%) hue-rotate(30deg) brightness(290%) contrast(61%);
+    cursor:pointer;
 }
 
 .bronx:hover {
-	height:70px;
+	filter: invert(94%) sepia(0%) saturate(3520%) hue-rotate(30deg) brightness(90%) contrast(61%);
 }
 
 .queen {
     position: fixed;
-    left: 746px;
+    left: 750px;
     top: 249px;
     height: 320px;
     rotate: 1deg;
     z-index:-1;
+    filter: invert(94%) sepia(0%) saturate(3520%) hue-rotate(30deg) brightness(130%) contrast(61%);
+    cursor:pointer;
 }
 
 .queen:hover {
-	height:150px;
+	filter: invert(94%) sepia(0%) saturate(3520%) hue-rotate(30deg) brightness(50%) contrast(61%);
 }
 
 .brooklyn {
 position: fixed;
     left: 673px;
-    top: 326px;
+    top: 330px;
     height: 210px;
     rotate: 1deg;
     z-index:-1;
-}
+    filter: invert(94%) sepia(0%) saturate(3520%) hue-rotate(30deg) brightness(200%) contrast(61%);
+    cursor:pointer;
+  }
 
 .brooklyn:hover {
-	height:100px;
+	filter: invert(94%) sepia(0%) saturate(3520%) hue-rotate(30deg) brightness(80%) contrast(61%);
 }
 
 .staten {
@@ -114,10 +176,12 @@ position: fixed;
     height: 160px;
     rotate: 1deg;
     z-index:-1;
+    filter: invert(94%) sepia(0%) saturate(3520%) hue-rotate(30deg) brightness(150%) contrast(61%);
+    cursor:pointer;
 }
 
 .staten:hover {
-	height:70px;
+	filter: invert(94%) sepia(0%) saturate(3520%) hue-rotate(30deg) brightness(70%) contrast(61%);
 }
 
 .traffic {
@@ -129,6 +193,7 @@ position: fixed;
 	bottom:60px;
 	right:60px;
 	border:solid black;
+
 }
 
 .legend{
@@ -140,7 +205,13 @@ position: fixed;
     position: fixed;
     bottom: 140px;
     right: 60px;
+    display:none;
 }
+
+	.traffic:hover .legend{
+		display:block;
+	}
+
 
 .gt{
 		width:25px;
@@ -262,4 +333,10 @@ left: 96px;
 	.staten:hover{
 		height:75px;
 	}
+
+	h3{
+		position:fixed;
+		left: 113px;
+    bottom: 180px;
 }
+
