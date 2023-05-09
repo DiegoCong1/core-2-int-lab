@@ -16,7 +16,7 @@ h1 {
     top: 30%;
     transform: translate(-50%, -50%);
     pointer-events:none;
-    -webkit-text-stroke: 2px black;
+    -webkit-text-stroke: 0px black;
 
 }
 
@@ -67,9 +67,48 @@ h1 {
     display:none;
 }
 
+h2:hover .y2000{
+	display:block;
+}
+
+h2:hover .y2010{
+	display:block;
+}
+
+h2:hover .y2020{
+	display:block;
+}
+
+h2:hover .y1990{
+	display:block;
+}
+
 .y2000{
 	text-align:center;
 	cursor:pointer;
+	    padding-left: 35px;
+	    display:none;
+}
+
+.y2010{
+	text-align:center;
+	cursor:pointer;
+	    padding-left: 35px;
+	    display:none;
+}
+
+.y2020{
+	text-align:center;
+	cursor:pointer;
+	    padding-left: 35px;
+	    display:none;
+}
+
+.y1990{
+	text-align:center;
+	cursor:pointer;
+	    padding-left: 35px;
+	    display:none;
 }
 
 h2{
@@ -87,9 +126,18 @@ h3{
     font-size: 20px;
     position: fixed;
     font-weight: 100;
-    bottom: 120px;
-    left: 44.5%;
+    bottom: 170px;
+    left: 45.7%;
     text-align:center;
+}
+
+h4{
+	position:fixed;
+	font-family:"Agency Fb";
+	font-size:20px;
+	font-weight:100;
+	top:-10px;
+	left:20px;
 }
 
 #average-speed.red {
@@ -101,7 +149,7 @@ h3{
 }
 
 #average-speed.green {
-  color: #23d323;
+  color: #00b400;
 }
 
 
@@ -188,13 +236,26 @@ position: fixed;
 	width:40px;
 	height:40px;
 	border-radius:50%;
-	background:#23d323;
+	background:#00b400;
 	position:fixed;
 	bottom:60px;
 	right:60px;
 	border:solid black;
 
 }
+
+.traffic.red{
+	background: red;
+}
+
+.traffic.green{
+	background: #00b400;
+}
+
+.traffic.orange{
+	background: #ffd600;
+}
+
 
 .legend{
 		width: 250px;
@@ -285,11 +346,11 @@ position: fixed;
 
 @media screen and (max-width: 400px){
 	h1{
-		    font-size: 50px;
+		    font-size: 70px;
     padding: 0px;
     position: fixed;
-    top: 50%;
-    left: 50%;
+    top: 47%;
+    left: 49%;
     transform: translate(-50%, -50%);
 }
 	.manhattan{
@@ -336,7 +397,41 @@ position: fixed;
 
 	h3{
 		position:fixed;
-		left: 113px;
-    bottom: 180px;
+		left: 132px;
+    bottom: 300px;
+}
+
+	.legend{
+		right:12px;
+	}
+
+	.gt{
+		right:225px;
+	}
+
+	.lt{
+		right:12px;
+	}
+
+	.yt{
+		right:225px;
+	}
+
+	.mt{
+		right:12px;
+	}
+
+	.rt{
+		right:225px;
+	}
+
+	.ht{
+		right:12px;
+	}
+
+	.webinfo{
+		    width: 300px;
+    left: 34px;
+    bottom: 195px;
 }
 
